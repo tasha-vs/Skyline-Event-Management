@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-4"></div>
+    <h2>Delete Client</h2>
+<br />
+<br />
+    <h3> Enter email:</h3>
+    <p>
+        <form method="GET" action="~/Delete/DeleteClientByEmail">
+            <b>Email: </b><input type="text" name="email" /> <br /><br />
+            <input type="submit"/>
+        </form>
+    </p>
+<br />
+<br />
+    <h3> Enter full name:</h3>
+    <p>
+        <form method="get" action="~/Delete/DeleteClientByFullName">
+            <b>Full Name: </b><input type="text" name="fullname" /> <br /><br />
+            <input type="submit"/>
+        </form>
+    </p>
+
+

@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Registrations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Registrations</h2><br />
+
+<br />
+<table class="table">
+    <tr>
+        <th> Guest Number </th>
+        <th> Payment Amount (NZD) </th>
+        <th> Event Name </th>
+        <th> Client Email </th>
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td> @i.GuestNumber</td>
+            <td> @i.PaymentAmount</td>
+            <td> @i.EventName</td>
+            <td> @i.Email</td>
+        </tr>
+    }
+</table>

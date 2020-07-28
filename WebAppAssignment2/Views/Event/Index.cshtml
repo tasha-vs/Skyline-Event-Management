@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Event Registration System</h1>
+<br />
+<br />
+<h2>Event Details:</h2>
+<br />
+<table class="table">
+    <tr>
+        <th> Event Name </th>
+        <th> Description </th>
+        <th> Location </th>
+        <th> Date </th>
+        <th> Ticket Fee (NZD)</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+    <tr>
+        <td> @i.EventName</td>
+        <td> @i.Description</td>
+        <td> @i.Location</td>
+        <td> @i.Date</td>
+        <td> @i.TicketFee</td>
+    </tr>
+    }
+</table>
+

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-wideth" />
+    <title> Add </title>
+</head>
+<body>
+    <div>
+        <table class="table">
+            <tr>
+                <td>
+                    @Model.Email
+                </td>
+                <td>
+                    @Model.FullName
+                </td>
+                <td>
+                    @Model.Address
+                </td>
+                <td>
+                    @Model.Age
+                </td>
+                <td>
+                    @Model.Phone
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+

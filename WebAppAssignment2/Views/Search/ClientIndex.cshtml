@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ClientIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search Client by Full Name</h2><br />
+<form method="post" action="~/Search/ClientFullNameSearch">
+    <b>Full Name:   </b><input type="text" name="fullName" /><br /><br />
+    <input type="submit" value="Search Full Name"/><br />
+</form>
+<br />
+<br />
+
+<h2>Search Client by Email</h2><br />
+<form method="post" action="~/Search/ClientEmailSearch">
+    <b>Email:   </b><input type="text" name="email" /><br /><br />
+    <input type="submit" value="Search Email"/><br />
+</form>
+

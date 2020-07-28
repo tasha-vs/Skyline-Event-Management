@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "EventNameSearch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search Results:</h2>
+
+<table class="table">
+    <tr>
+        <th> Event Name: </th>
+        <th> Description: </th>
+        <th> Location: </th>
+        <th> Date: </th>
+        <th> Ticket Fee: </th>
+    </tr>
+
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td> @i.EventName </td>
+            <td> @i.Description </td>
+            <td> @i.Location </td>
+            <td> @i.Date </td>
+            <td> @i.TicketFee </td>
+        </tr>
+    }
+</table>
+
+<div>
+    @Html.ActionLink("Back to Search", "EventIndex")
+</div>
+

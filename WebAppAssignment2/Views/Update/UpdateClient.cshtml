@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "UpdateClient";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Update Client</h1>
+<br /><br />
+<h2>@Model.FullName Updated Details:</h2>
+<table class="table">
+    <tr>
+        <th> Email </th>
+        <th> Full Name </th>
+        <th> Address </th>
+        <th> Age </th>
+        <th> Phone </th>
+    </tr>
+        <tr>
+            <td> @Model.Email </td>
+            <td> @Model.FullName </td>
+            <td> @Model.Address </td>
+            <td> @Model.Age </td>
+            <td> @Model.Phone </td>
+        </tr>
+</table>
+
+<div>
+    @Html.ActionLink("Back to Update Client", "ClientIndex")
+</div>
+
+

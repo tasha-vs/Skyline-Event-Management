@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "EventIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search Event by Event Name</h2><br />
+<form method="post" action="~/Search/EventNameSearch">
+    <b>Event Name:   </b> <input type="text" name="eventName" /><br /><br />
+    <input type="submit" value="Search Name"/><br />
+</form>
+<br />
+<br />
+
+<h2>Search Event by Date</h2><br />
+<form method="post" action="~/Search/EventDateSearch">
+    <b>Date:   </b><input type="text" name="date" /><br /><br />
+    <input type="submit" value="Search Date"/><br />
+</form>
+

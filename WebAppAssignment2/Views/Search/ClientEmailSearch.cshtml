@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "ClientEmailSearch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Search Result </h2>
+<table class="table">
+    <tr>
+        <th>Email:</th>
+        <th>Full Name:</th>
+        <th>Address:</th>
+        <th>Age:</th>
+        <th>Phone:</th>
+    </tr>
+        <tr>
+            <td> @Model.Email </td>
+            <td> @Model.FullName </td>
+            <td> @Model.Address </td>
+            <td> @Model.Age </td>
+            <td> @Model.Phone </td>
+        </tr>
+</table>
+
+<div>
+    @Html.ActionLink("Back to Search", "ClientIndex")
+</div>

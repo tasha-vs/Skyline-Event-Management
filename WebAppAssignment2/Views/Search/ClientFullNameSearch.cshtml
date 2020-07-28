@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "ClientFullNameSearch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search Results:</h2>
+
+<table class="table">
+    <tr>
+        <th> Email: </th>
+        <th> Full Name: </th>
+        <th> Address: </th>
+        <th> Age: </th>
+        <th> Phone: </th>
+    </tr>
+
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td> @i.Email </td>
+            <td> @i.FullName </td>
+            <td> @i.Address </td>
+            <td> @i.Age </td>
+            <td> @i.Phone </td>
+        </tr>
+    }
+</table>
+
+<div>
+    @Html.ActionLink("Back to Search", "ClientIndex")
+</div>

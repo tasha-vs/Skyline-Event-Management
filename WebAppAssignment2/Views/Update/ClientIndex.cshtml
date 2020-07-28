@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "ClientIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit Client</h1>
+
+<br />
+<div class="col-4">
+    <h2>Enter the Email of the Client You Wish to Edit:</h2><br />
+    <h3>Leave the fields you do not wish to update as blank</h3><br />
+    <p>
+        <form method="POST" action="~/Update/UpdateClient">
+            <b>Enter Client Email: </b><input type="text" name="email" placeholder="Enter Client Email" /><br /><br />
+            <b>Enter New Address: </b><input type="text" name="address" placeholder="Enter New Address" /><br /><br />
+            <b>Enter New Phone: </b><input type="text" name="phone" placeholder="Enter New Phone" /><br /><br />
+            <input type="submit" value="Update"/>
+        </form>
+    </p>
+</div>
+

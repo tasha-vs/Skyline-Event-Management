@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Event Registration System</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="@Url.Action("Index", "Home")">
+                            <span class="glyphicon glyphicon-home"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clients <span class="caret"></span> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Client/RegForm">Register New Client</a></li>
+                            <li><a href="~/Client/Index">View Clients</a></li>
+                            <li><a href="~/Search/ClientIndex">Search Client</a></li>
+                            <li><a href="~/Update/ClientIndex">Update Client</a></li>
+                            <li><a href="~/Delete/Index">Delete Client</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events <span class="caret"></span> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Event/RegForm">Register For An Event</a></li>
+                            <li><a href="~/Event/Registrations">View Current Registrations</a></li>
+                            <li><a href="~/Event/Index">View Events</a></li>
+                            <li><a href="~/Search/EventIndex">Search Event</a></li>
+                            <li><a href="~/Delete/EventIndex">Delete Event Registration</a></li>
+                        </ul>
+                    </li>
+</div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

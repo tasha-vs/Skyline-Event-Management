@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> New Registration </title>
+</head>
+<br />
+<br />
+<h1> Registration Details: </h1>
+<br />
+<body>
+    <div>
+        <table class="table">
+            <tr>
+                <th> Register ID </th>
+                <td>
+                    @Model.RegisterID
+                </td>
+                <th> Guest Number </th>
+                <td>
+                    @Model.GuestNumber
+                </td>
+                <th> Event Name </th>
+                <td>
+                    @Model.EventName
+                </td>
+                <th> Client Email </th>
+                <td>
+                    @Model.Email
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
